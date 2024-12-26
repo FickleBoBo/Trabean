@@ -27,5 +27,4 @@ public interface UserAccountRelationRepository extends JpaRepository<UserAccount
     void updateUserRoleByUserIdAndAccountId(Long userId, Long accountId, UserRole userRole);
 
     List<UserAccountRelation> findByAccount_AccountIdAndUserRole(Long accountId, UserRole userRole);
-
 }

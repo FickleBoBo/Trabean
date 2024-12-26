@@ -1,7 +1,7 @@
 package com.trabean.external.msa.user.client;
 
 import com.trabean.config.FeignClientConfig;
-import com.trabean.external.msa.user.dto.request.MainAccountIdRequestDTO;
+import com.trabean.external.msa.user.dto.request.UpdateMainAccountIdRequestDTO;
 import com.trabean.external.msa.user.dto.request.UserKeyRequestDTO;
 import com.trabean.external.msa.user.dto.response.MainAccountIdResponseDTO;
 import com.trabean.external.msa.user.dto.response.UserKeyResponseDTO;
@@ -37,5 +37,5 @@ public interface UserClient {
      * mainAccountId 저장
      */
     @PostMapping("api/user/mainAccountId")
-    void updateMainAccountId(@RequestBody MainAccountIdRequestDTO requestDTO);
+    void updateMainAccountId(@RequestBody UpdateMainAccountIdRequestDTO requestDTO);
 }

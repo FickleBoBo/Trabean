@@ -18,5 +18,5 @@ public interface MemoClient {
      * SSAFY 금융 API p.266 - 거래내역 메모
      */
     @PostMapping("/transactionMemo")
-    TransactionMemoResponseDTO transactionMeno(@RequestBody TransactionMemoRequestDTO requestDTO);
+    TransactionMemoResponseDTO transactionMemo(@RequestBody TransactionMemoRequestDTO requestDTO);
 }
